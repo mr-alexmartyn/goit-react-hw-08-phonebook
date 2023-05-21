@@ -10,7 +10,7 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={store} basename="/goit-react-hw-08-phonebook/">
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <App />
